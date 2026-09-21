@@ -141,8 +141,8 @@ export function Hero() {
         >
           <div className="bg-bg-void/80 border border-accent-500/50 p-6 flex flex-col items-center justify-center shadow-[0_0_25px_rgba(0,255,156,0.15)] backdrop-blur-md">
             <span className="font-mono text-accent-500 text-xs tracking-widest mb-2 uppercase">Rewards</span>
-            <span className="font-sans text-xl lg:text-2xl font-bold uppercase tracking-wider text-center">₹5,000 Prize Pool</span>
-            <span className="font-mono text-xs text-text-muted mt-2 text-center uppercase tracking-widest">+ Exclusive Title Badge</span>
+            <span className="font-sans text-xl lg:text-2xl font-bold uppercase tracking-wider text-center">Badge of Honor</span>
+            <span className="font-mono text-xs text-text-muted mt-2 text-center uppercase tracking-widest">+ Exclusive Prizes</span>
           </div>
 
           <div className="bg-bg-void/80 border border-text-muted/20 p-6 flex flex-col items-center justify-center backdrop-blur-md">
