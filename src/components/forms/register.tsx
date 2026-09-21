@@ -129,6 +129,9 @@ export function RegistrationForm() {
           {currentStep === 0 && (
             <motion.div key="step0" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
               <div className="space-y-4">
+                <div className="bg-warn-500/10 border-l-2 border-warn-500 p-3 mb-4 text-xs font-mono text-warn-500">
+                  <span className="font-bold">CRITICAL:</span> Ensure your Email and Phone Number are 100% correct. This is our ONLY method of communication for screening and final selection.
+                </div>
                 <Field label="Full Name" error={errors.fullName?.message}>
                   <Input {...register("fullName")} placeholder="John Doe" />
                 </Field>
@@ -200,7 +203,7 @@ export function RegistrationForm() {
                     <option value="javascript">JavaScript</option>
                   </select>
                 </Field>
-                <Field label="GitHub URL (Optional)" error={errors.githubUrl?.message}>
+                <Field label="GitHub Profile URL" error={errors.githubUrl?.message}>
                   <Input {...register("githubUrl")} placeholder="https://github.com/..." />
                 </Field>
               </div>

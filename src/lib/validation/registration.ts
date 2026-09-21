@@ -17,7 +17,7 @@ export const registrationSchema = z.object({
   preferredLanguage: z.enum(["cpp", "java", "python", "javascript"], {
     message: "Preferred language required"
   }),
-  githubUrl: z.union([z.string().url("Must be a valid URL"), z.literal(""), z.undefined()]),
+  githubUrl: z.string().url("Must be a valid URL").includes("github.com", { message: "Must be a valid GitHub profile URL" }),
   consentGiven: z.literal(true, {
     message: "You must accept the rules and consent."
   }),
