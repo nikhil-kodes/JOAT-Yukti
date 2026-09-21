@@ -31,7 +31,7 @@ const challenges = [
   },
   {
     title: "Final Boss",
-    desc: "The system is lying. Investigate the anomaly.",
+    desc: "CLASSIFIED",
     icon: "/assets/shield-logo.png",
     fallback: "SYS"
   },
@@ -197,7 +197,7 @@ export function TitleWarningSection() {
             <ul className="space-y-6 font-mono text-sm md:text-base text-text-muted">
               <li className="flex gap-4 items-start">
                 <span className="text-warn-500 font-bold bg-warn-500/10 px-2 py-1">01</span> 
-                <p><strong className="text-text-primary text-lg block mb-1">STRICT CAPACITY</strong> First-come, first-serve. There are exactly <strong className="text-warn-500 border-b border-warn-500">150 SEATS</strong> available in the CTM Labs. Once filled, access is permanently closed.</p>
+                <p><strong className="text-text-primary text-lg block mb-1">STRICT CAPACITY</strong> First-come, first-serve. There are exactly <strong className="text-warn-500 border-b border-warn-500">150 SEATS</strong> available in AB3 Block A. Once filled, access is permanently closed.</p>
               </li>
               <li className="flex gap-4 items-start">
                 <span className="text-warn-500 font-bold bg-warn-500/10 px-2 py-1">02</span> 

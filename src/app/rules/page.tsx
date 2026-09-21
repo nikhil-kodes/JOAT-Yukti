@@ -71,8 +71,8 @@ export default function RulesPage() {
                 <p>Solve an algorithmic problem using C++, Java, Python, or JavaScript. Brute-force solutions will fail hidden test cases.</p>
               </Panel>
               <Panel className="p-6 border-text-muted/20 bg-bg-surface/50">
-                <h3 className="font-mono text-accent-500 uppercase mb-2">Round 5: The System Is Lying (Final Boss)</h3>
-                <p>Investigate a fictional system containing reports, CSV files, databases, and logs. Find the inconsistencies. This challenge carries the highest point value.</p>
+                <h3 className="font-mono text-warn-500 uppercase mb-2">Round 5: Final Boss (CLASSIFIED)</h3>
+                <p className="text-warn-500 font-bold tracking-widest border-l border-warn-500 pl-3">CLASSIFIED</p>
               </Panel>
             </div>
           </section>

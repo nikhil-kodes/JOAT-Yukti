@@ -153,7 +153,7 @@ export function Hero() {
 
           <div className="bg-bg-void/80 border border-text-muted/20 p-6 flex flex-col items-center justify-center backdrop-blur-md">
             <span className="font-mono text-text-muted text-xs tracking-widest mb-2 uppercase">Battleground</span>
-            <span className="font-sans text-xl lg:text-2xl font-bold uppercase tracking-wider text-center">CTM Building</span>
+            <span className="font-sans text-xl lg:text-2xl font-bold uppercase tracking-wider text-center">AB3 Block A</span>
             <span className="font-mono text-xs text-text-muted mt-2 text-center uppercase tracking-widest">GLBITM, Greater Noida</span>
           </div>
         </motion.div>
