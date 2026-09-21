@@ -274,7 +274,7 @@ export function Footer() {
               <Image src="/assets/linkedin-logo.png" alt="LinkedIn" fill className="object-contain" />
             </a>
             <a href="https://x.com/yuktikulaglbitm" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
-              <Image src="/assets/twitter-logo.png" alt="X/Twitter" fill className="object-contain" />
+              <Image src="/assets/x-shape.png" alt="X/Twitter" fill className="object-contain" />
             </a>
           </div>
         </div>
