@@ -301,6 +301,11 @@ export function Footer() {
           </a>
         </div>
       </div>
+      
+      {/* Made with Love Bottom Bar */}
+      <div className="container mx-auto px-6 mt-16 pt-8 border-t border-text-muted/10 relative z-10 flex justify-center items-center font-mono text-[10px] sm:text-xs text-text-muted uppercase tracking-widest text-center">
+        Made with <Image src="/assets/hearts-shape.png" alt="love" width={16} height={16} className="mx-2 inline-block opacity-70" /> by Tech Team for GLBAJAJ
+      </div>
     </footer>
   );
 }
