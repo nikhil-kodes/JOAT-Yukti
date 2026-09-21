@@ -28,9 +28,9 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-8 flex items-center justify-center gap-8"
         >
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 opacity-80 hover:opacity-100 transition-opacity">
+          <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="relative w-16 h-16 sm:w-20 sm:h-20 opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
             <Image src="/assets/yuktikula-logo.webp-Photoroom.png" alt="Yuktikula Logo" fill className="object-contain" priority />
-          </div>
+          </a>
           <div className="w-px h-10 bg-text-muted/30"></div>
           <div className="relative w-20 h-20 sm:w-24 sm:h-24 opacity-90 drop-shadow-[0_0_15px_rgba(0,255,156,0.3)]">
             <Image src="/assets/joat-logo-Photoroom.png" alt="JOAT Logo" fill className="object-contain" priority />

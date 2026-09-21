@@ -252,22 +252,53 @@ export function CTASection() {
 
 export function Footer() {
   return (
-    <footer className="py-16 border-t border-text-muted/10 bg-bg-void relative z-10">
+    <footer className="py-20 border-t border-text-muted/10 bg-bg-void relative z-10">
       <div className="absolute inset-0 bg-[url('/assets/grain-texture-1.png')] bg-repeat opacity-15 mix-blend-overlay pointer-events-none"></div>
-      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
-        <div className="flex flex-col sm:flex-row items-center gap-6">
-          <div className="relative w-16 h-16 opacity-70 hover:opacity-100 transition-opacity">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10 text-center md:text-left">
+        
+        {/* Brand */}
+        <div className="md:col-span-4 flex flex-col items-center md:items-start gap-4">
+          <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="relative w-16 h-16 opacity-70 hover:opacity-100 transition-opacity cursor-pointer block">
             <Image src="/assets/yuktikula-logo.webp-Photoroom.png" alt="Yuktikula" fill className="object-contain" />
-          </div>
-          <div className="font-mono text-xs text-text-muted uppercase tracking-widest text-center sm:text-left leading-relaxed">
-            Yuktikula<br/>
+          </a>
+          <div className="font-mono text-xs text-text-muted uppercase tracking-widest leading-relaxed">
+            <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="hover:text-accent-500 transition-colors font-bold">YUKTIKULA</a><br/>
             <span className="text-text-metallic">Dept of Data Science, GLBITM</span>
           </div>
+          
+          <div className="flex items-center gap-6 mt-2 justify-center md:justify-start">
+            <a href="https://www.instagram.com/yuktikula_glbajaj/" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
+              <Image src="/assets/instagram-logo.png" alt="Instagram" fill className="object-contain" />
+            </a>
+            <a href="https://www.linkedin.com/company/yuktikula-club/" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
+              <Image src="/assets/linkedin-logo.png" alt="LinkedIn" fill className="object-contain" />
+            </a>
+            <a href="https://x.com/yuktikulaglbitm" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
+              <Image src="/assets/twitter-logo.png" alt="X/Twitter" fill className="object-contain" />
+            </a>
+          </div>
+        </div>
+
+        {/* Links */}
+        <div className="md:col-span-4 flex flex-col items-center md:items-start gap-4 font-mono text-xs uppercase tracking-widest">
+          <h4 className="text-text-primary mb-2 font-bold">Platform</h4>
+          <Link href="/rules" className="text-text-muted hover:text-accent-500 transition-colors">Rule Book</Link>
+          <Link href="/register" className="text-text-muted hover:text-accent-500 transition-colors">Register Now</Link>
+          <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-accent-500 transition-colors mt-2 text-[10px]">Back to Yuktikula ↗</a>
         </div>
         
-        <div className="flex gap-10 font-mono text-xs uppercase tracking-widest">
-          <Link href="/rules" className="text-text-muted hover:text-accent-500 transition-colors">Rules</Link>
-          <Link href="/register" className="text-text-muted hover:text-accent-500 transition-colors">Register</Link>
+        {/* Contact */}
+        <div className="md:col-span-4 flex flex-col items-center md:items-start gap-4 font-mono text-xs tracking-widest">
+          <h4 className="text-text-primary mb-2 font-bold uppercase">Contact Us</h4>
+          <a href="mailto:yuktikula@glbitm.ac.in" className="text-text-muted hover:text-accent-500 transition-colors lowercase flex items-center gap-2">
+            yuktikula@glbitm.ac.in
+          </a>
+          <a href="tel:+918604225347" className="text-text-muted hover:text-accent-500 transition-colors flex items-center gap-2">
+            +91 8604225347
+          </a>
+          <a href="tel:+917764935410" className="text-text-muted hover:text-accent-500 transition-colors flex items-center gap-2">
+            +91 7764935410
+          </a>
         </div>
       </div>
     </footer>
