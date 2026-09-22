@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://joat.yuktikula.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://joat.yuktikulaglb.in";
 
 export const viewport: Viewport = {
   width: "device-width",
