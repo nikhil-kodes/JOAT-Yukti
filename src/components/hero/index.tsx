@@ -29,11 +29,11 @@ export function Hero() {
           className="mb-8 flex items-center justify-center gap-8"
         >
           <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="relative w-16 h-16 sm:w-20 sm:h-20 opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
-            <Image src="/assets/yuktikula-logo.webp-Photoroom.png" alt="Yuktikula Logo" fill className="object-contain" priority />
+            <Image src="/assets/yuktikula-logo.webp-Photoroom.png" alt="Yuktikula Logo" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
           </a>
           <div className="w-px h-10 bg-text-muted/30"></div>
           <div className="relative w-20 h-20 sm:w-24 sm:h-24 opacity-90 drop-shadow-[0_0_15px_rgba(0,255,156,0.3)]">
-            <Image src="/assets/joat-logo-Photoroom.png" alt="JOAT Logo" fill className="object-contain" priority />
+            <Image src="/assets/joat-logo-Photoroom.png" alt="JOAT Logo" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
           </div>
         </motion.div>
 
@@ -83,7 +83,7 @@ export function Hero() {
             <Image 
               src="/assets/card-front.png" 
               alt="Jack Card" 
-              fill 
+              fill sizes="(max-width: 768px) 100vw, 50vw" 
               className="object-contain drop-shadow-[0_0_40px_rgba(0,255,156,0.25)]"
               priority
             />
@@ -169,27 +169,27 @@ function FloatingCards() {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden z-[1]">
       <div className="absolute top-[15%] left-[5%] w-56 h-80 transform -rotate-12 opacity-80">
-        <Image src="/assets/blur-1.png" alt="" fill className="object-contain" priority />
+        <Image src="/assets/blur-1.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
       </div>
       
       <div className="absolute top-[10%] right-[8%] w-64 h-96 transform rotate-12 opacity-80">
-        <Image src="/assets/blur-2.png" alt="" fill className="object-contain" priority />
+        <Image src="/assets/blur-2.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
       </div>
       
       <div className="absolute bottom-[15%] left-[10%] w-64 h-96 transform -rotate-6 opacity-70">
-        <Image src="/assets/blur-3.png" alt="" fill className="object-contain" />
+        <Image src="/assets/blur-3.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
       </div>
 
       <div className="absolute bottom-[20%] right-[5%] w-72 h-[450px] transform -rotate-12 opacity-70">
-        <Image src="/assets/blur-7.png" alt="" fill className="object-contain" />
+        <Image src="/assets/blur-7.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
       </div>
 
       <div className="absolute top-[50%] left-[2%] w-40 h-60 transform rotate-45 opacity-60">
-        <Image src="/assets/blur-10.png" alt="" fill className="object-contain" />
+        <Image src="/assets/blur-10.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
       </div>
 
       <div className="absolute top-[60%] right-[2%] w-48 h-72 transform -rotate-45 opacity-60">
-        <Image src="/assets/blur-11.png" alt="" fill className="object-contain" />
+        <Image src="/assets/blur-11.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" priority />
       </div>
     </div>
   );

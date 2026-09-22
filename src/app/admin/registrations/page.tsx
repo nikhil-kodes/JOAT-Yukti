@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 import { Panel } from "@/components/ui/panel";
 import { createAdminClient } from "@/lib/supabase/server";
 import { CsvExportButton } from "@/components/admin/csv-export-button";
+import { StatusSelector } from "@/components/admin/status-selector";
 
 export default async function AdminRegistrationsPage() {
   const supabase = createAdminClient();
@@ -42,13 +43,7 @@ export default async function AdminRegistrationsPage() {
               <tr key={reg.participant_id} className="hover:bg-bg-base/50 transition-colors">
                 <td className="px-4 py-3 font-mono text-accent-500">{reg.participant_id}</td>
                 <td className="px-4 py-3">
-                  <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono uppercase ${
-                    reg.status === 'confirmed' ? 'bg-accent-500/10 text-accent-500 border border-accent-500/20' :
-                    reg.status === 'cancelled' ? 'bg-warn-500/10 text-warn-500 border border-warn-500/20' :
-                    'bg-text-muted/10 text-text-muted border border-text-muted/20'
-                  }`}>
-                    {reg.status}
-                  </span>
+                  <StatusSelector participantId={reg.participant_id} currentStatus={reg.status} />
                 </td>
                 <td className="px-4 py-3 text-text-primary font-medium">{reg.full_name}</td>
                 <td className="px-4 py-3 text-text-muted font-mono">{reg.roll_number}</td>

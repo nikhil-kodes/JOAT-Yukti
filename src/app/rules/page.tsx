@@ -6,7 +6,24 @@ import { Button } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
 
 export const metadata: Metadata = {
-  title: "Rule Book | JOAT",
+  title: "Rule Book – Jack of All Trades",
+  description:
+    "Official rules, scoring formula, round structure, and anti-cheating policy for Jack of All Trades – the 120-minute offline multi-domain technical sprint by Yuktikula at GL Bajaj Institute of Technology & Management, Greater Noida.",
+  keywords: [
+    "Jack of All Trades rules",
+    "Yuktikula event rules",
+    "GLBITM coding contest rules",
+    "JOAT rulebook",
+    "hackathon rules Greater Noida",
+  ],
+  openGraph: {
+    title: "Rule Book – Jack of All Trades | Yuktikula",
+    description:
+      "Read the official rules, scoring system, and round structure before you enter the battlefield.",
+    url: "/rules",
+    images: [{ url: "/assets/card-front.png", width: 1200, height: 630 }],
+  },
+  alternates: { canonical: "/rules" },
 };
 
 export default function RulesPage() {
@@ -17,7 +34,7 @@ export default function RulesPage() {
       <header className="p-6 relative z-10 flex justify-between items-center border-b border-text-muted/10 bg-bg-surface/50 backdrop-blur-md sticky top-0">
         <Link href="/" className="flex items-center gap-4 group">
           <div className="relative w-8 h-8 opacity-70 group-hover:opacity-100 transition-opacity">
-             <Image src="/assets/joat-logo-Photoroom.png" alt="JOAT" fill className="object-contain" />
+             <Image src="/assets/joat-logo-Photoroom.png" alt="JOAT" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
           </div>
           <span className="font-mono text-sm tracking-widest text-text-muted group-hover:text-accent-500 transition-colors uppercase hidden sm:block">
             System Back

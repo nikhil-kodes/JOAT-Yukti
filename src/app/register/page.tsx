@@ -5,7 +5,24 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Access Request | JOAT",
+  title: "Register Now – Jack of All Trades",
+  description:
+    "Register for Jack of All Trades, the ultimate 120-minute offline multi-domain technical sprint by Yuktikula at GL Bajaj Institute of Technology & Management, Greater Noida. Limited to 150 seats. First come, first served.",
+  keywords: [
+    "Jack of All Trades registration",
+    "Yuktikula registration",
+    "GLBITM coding event register",
+    "GL Bajaj hackathon registration",
+    "Greater Noida tech event signup",
+  ],
+  openGraph: {
+    title: "Register – Jack of All Trades | Yuktikula",
+    description:
+      "Secure your spot in the ultimate technical gauntlet. Only 150 seats available. Register now before it's too late.",
+    url: "/register",
+    images: [{ url: "/assets/card-front.png", width: 1200, height: 630 }],
+  },
+  alternates: { canonical: "/register" },
 };
 
 export default function RegisterPage() {

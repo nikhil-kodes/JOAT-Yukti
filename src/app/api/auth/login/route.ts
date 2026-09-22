@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     }
 
     // Update last login
-    await supabase.from('admins').update({ last_login_at: new Date().toISOString() }).eq('id', admin.id);
+    supabase.from('admins').update({ last_login_at: new Date().toISOString() }).eq('id', admin.id).then(); // Don't await
 
     const token = await signAdminToken({ id: admin.id, role: admin.role, email: admin.email });
     

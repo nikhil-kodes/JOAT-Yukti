@@ -107,23 +107,23 @@ export function PhilosophySection() {
       {/* Floating Elements for Philosophy Section */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden flex justify-center items-center z-0">
         <div className="absolute left-[-10%] top-[20%] w-[400px] h-[600px] opacity-[0.04] transform -rotate-12 blur-[2px]">
-          <Image src="/assets/card-back.png" alt="" fill className="object-contain" />
+          <Image src="/assets/card-back.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute right-[-15%] bottom-[10%] w-[500px] h-[500px] opacity-[0.05] transform rotate-[15deg]">
-          <Image src="/assets/card-group.png" alt="" fill className="object-contain" />
+          <Image src="/assets/card-group.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         
         <div className="absolute top-[15%] left-[20%] w-10 h-10 opacity-10 transform -rotate-12">
-          <Image src="/assets/spade-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/spade-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute bottom-[20%] right-[30%] w-12 h-12 opacity-10 transform rotate-45">
-          <Image src="/assets/diamond-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/diamond-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute top-[30%] right-[15%] w-8 h-8 opacity-10 transform rotate-12">
-          <Image src="/assets/clubs-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/clubs-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute bottom-[40%] left-[10%] w-14 h-14 opacity-10 transform -rotate-45">
-          <Image src="/assets/hearts-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/hearts-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
       </div>
       
@@ -167,10 +167,10 @@ export function TitleWarningSection() {
       {/* Floating Trophy & Crown */}
       <div className="absolute inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
         <div className="absolute top-[10%] left-[10%] sm:left-[20%] w-16 h-16 sm:w-24 sm:h-24 opacity-40 transform -rotate-12 mix-blend-screen drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-          <Image src="/assets/crown-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/crown-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute bottom-[10%] right-[10%] sm:right-[20%] w-20 h-20 sm:w-32 sm:h-32 opacity-30 transform rotate-12 mix-blend-screen drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
-          <Image src="/assets/trophy-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/trophy-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
       </div>
 
@@ -220,13 +220,13 @@ export function CTASection() {
       {/* Shapes and cards for CTA */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden flex justify-center items-center z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-[0.03] transform rotate-90">
-          <Image src="/assets/card-group.png" alt="" fill className="object-contain" />
+          <Image src="/assets/card-group.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute top-[20%] right-[25%] w-6 h-6 opacity-20 animate-pulse">
-          <Image src="/assets/star-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/star-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
         <div className="absolute bottom-[30%] left-[20%] w-8 h-8 opacity-20">
-          <Image src="/assets/x-shape.png" alt="" fill className="object-contain" />
+          <Image src="/assets/x-shape.png" alt="" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
         </div>
       </div>
       
@@ -259,22 +259,33 @@ export function Footer() {
         {/* Brand */}
         <div className="md:col-span-4 flex flex-col items-center md:items-start gap-4">
           <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="relative w-16 h-16 opacity-70 hover:opacity-100 transition-opacity cursor-pointer block">
-            <Image src="/assets/yuktikula-logo.webp-Photoroom.png" alt="Yuktikula" fill className="object-contain" />
+            <Image src="/assets/yuktikula-logo.webp-Photoroom.png" alt="Yuktikula" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
           </a>
           <div className="font-mono text-xs text-text-muted uppercase tracking-widest leading-relaxed">
             <a href="https://yuktikulaglb.in/" target="_blank" rel="noopener noreferrer" className="hover:text-accent-500 transition-colors font-bold">YUKTIKULA</a><br/>
             <span className="text-text-metallic">Dept of Data Science, GLBITM</span>
           </div>
           
-          <div className="flex items-center gap-6 mt-2 justify-center md:justify-start">
-            <a href="https://www.instagram.com/yuktikula_glbajaj/" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
-              <Image src="/assets/instagram-logo.png" alt="Instagram" fill className="object-contain" />
+          <div className="flex flex-wrap items-center gap-3 mt-4 justify-center md:justify-start">
+            <a href="https://www.instagram.com/yuktikula_glbajaj/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-text-muted/30 bg-white/5 hover:bg-white/10 hover:border-accent-500/50 transition-all hover:-translate-y-1 group backdrop-blur-sm shadow-[0_0_10px_rgba(255,255,255,0.05)]">
+              <div className="relative w-4 h-4 opacity-90 group-hover:opacity-100 bg-white rounded-sm overflow-hidden flex items-center justify-center">
+                <Image src="/assets/instagram-logo.png" alt="Instagram" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover p-0.5" />
+              </div>
+              <span className="font-mono text-[10px] uppercase text-text-muted group-hover:text-text-primary transition-colors">Instagram</span>
             </a>
-            <a href="https://www.linkedin.com/company/yuktikula-club/" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
-              <Image src="/assets/linkedin-logo.png" alt="LinkedIn" fill className="object-contain" />
+
+            <a href="https://www.linkedin.com/company/yuktikula-club/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-text-muted/30 bg-white/5 hover:bg-white/10 hover:border-accent-500/50 transition-all hover:-translate-y-1 group backdrop-blur-sm shadow-[0_0_10px_rgba(255,255,255,0.05)]">
+              <div className="relative w-4 h-4 opacity-90 group-hover:opacity-100 bg-white rounded-sm overflow-hidden flex items-center justify-center">
+                <Image src="/assets/linkedin-logo.png" alt="LinkedIn" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover p-0.5" />
+              </div>
+              <span className="font-mono text-[10px] uppercase text-text-muted group-hover:text-text-primary transition-colors">LinkedIn</span>
             </a>
-            <a href="https://x.com/yuktikulaglbitm" target="_blank" rel="noopener noreferrer" className="relative w-5 h-5 opacity-60 hover:opacity-100 hover:scale-110 transition-all">
-              <Image src="/assets/x-shape.png" alt="X/Twitter" fill className="object-contain" />
+
+            <a href="https://x.com/yuktikulaglbitm" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-text-muted/30 bg-white/5 hover:bg-white/10 hover:border-accent-500/50 transition-all hover:-translate-y-1 group backdrop-blur-sm shadow-[0_0_10px_rgba(255,255,255,0.05)]">
+              <div className="relative w-4 h-4 opacity-90 group-hover:opacity-100 bg-white rounded-sm overflow-hidden flex items-center justify-center">
+                <Image src="/assets/x-shape.png" alt="X/Twitter" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover p-0.5" />
+              </div>
+              <span className="font-mono text-[10px] uppercase text-text-muted group-hover:text-text-primary transition-colors">Twitter</span>
             </a>
           </div>
         </div>
@@ -302,9 +313,34 @@ export function Footer() {
         </div>
       </div>
       
-      {/* Made with Love Bottom Bar */}
-      <div className="container mx-auto px-6 mt-16 pt-8 border-t border-text-muted/10 relative z-10 flex justify-center items-center font-mono text-[10px] sm:text-xs text-text-muted uppercase tracking-widest text-center">
-        Made with <Image src="/assets/hearts-shape.png" alt="love" width={16} height={16} className="mx-2 inline-block opacity-70" /> by Tech Team for GLBAJAJ
+      {/* Footer Bottom Bar */}
+      <div className="container mx-auto px-6 mt-16 pt-8 border-t border-text-muted/10 relative z-10 flex flex-col justify-center items-center gap-3 font-mono text-text-muted uppercase tracking-widest text-center">
+        <div className="relative group cursor-pointer">
+          <div className="flex items-center justify-center text-[10px] sm:text-xs">
+            Made with <Image src="/assets/hearts-shape.png" alt="love" width={28} height={28} className="mx-2 inline-block opacity-70 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.5)] transition-all duration-300" /> by Tech Team for GLBAJAJ
+          </div>
+          
+          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 sm:w-64 opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+            <div className="bg-bg-surface border border-accent-500/30 p-4 rounded-lg shadow-[0_0_20px_rgba(0,255,156,0.15)] relative">
+              <h4 className="font-mono text-accent-500 text-[10px] uppercase tracking-widest border-b border-accent-500/20 pb-2 mb-2">The Architects</h4>
+              <ul className="text-text-primary text-xs grid grid-cols-2 gap-y-2 gap-x-2 text-left font-sans">
+                <li>Nikhil Singh</li>
+                <li>Kaushtubh Kant</li>
+                <li>Dev Aggrawal</li>
+                <li>Bhoomi</li>
+                <li>Dev</li>
+                <li>Shaan</li>
+                <li>Akshat</li>
+                <li>Akash</li>
+              </ul>
+              <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-bg-surface border-b border-r border-accent-500/30 transform rotate-45"></div>
+            </div>
+          </div>
+        </div>
+        <div className="opacity-50 max-w-3xl leading-relaxed text-[8px] sm:text-[10px] mt-2 border-t border-text-muted/10 pt-4 px-4">
+          &copy; {new Date().getFullYear()} Yuktikula Club. All Rights Reserved.<br />
+          The concept of 'Jack of All Trades', its event architecture, technical activities, and this platform are the exclusive Intellectual Property of the Yuktikula Club. Unauthorized reproduction or imitation is strictly prohibited.
+        </div>
       </div>
     </footer>
   );

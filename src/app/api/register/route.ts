@@ -51,18 +51,7 @@ export async function POST(request: Request) {
     const data = result.data;
     const supabase = createAdminClient();
 
-    // 2. Pre-check for duplicate for friendly error
-    const { data: existingData } = await supabase
-      .from('registrations')
-      .select('college_email, roll_number')
-      .or(`college_email.eq.${data.collegeEmail},roll_number.eq.${data.rollNumber}`)
-      .limit(1)
-      .single();
 
-    if (existingData) {
-      const field = existingData.college_email === data.collegeEmail ? 'collegeEmail' : 'rollNumber';
-      return NextResponse.json({ error: "duplicate", field }, { status: 409 });
-    }
 
     // 3. Insert and generate ID atomically at the database level
     const { data: insertedData, error: insertError } = await supabase
