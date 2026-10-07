@@ -62,7 +62,7 @@ export default function RulesPage() {
               <p>Jack of All Trades is a 120-minute, multi-domain technical endurance competition designed to test adaptability, debugging, and analytical thinking.</p>
               <p>The competition is strictly offline. It takes place at the <strong>CTM Building, 10th Floor Labs</strong>. Each participant is assigned a preconfigured workstation with all datasets, compilers, interpreters, and tools loaded locally.</p>
               <p>You will use a custom <strong>Yuktikula VS Code Extension</strong> which handles the event dashboard, monotonic timer, local test suites, validations, and final signed result generation.</p>
-              <p>Exactly 5 participants will win, receiving the exclusive JOAT physical badge and a prize pool of approximately ₹5,000.</p>
+              <p>Exactly 5 participants will win, receiving the exclusive JOAT physical badge.</p>
             </div>
           </section>
 
